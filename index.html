@@ -1,14 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cido-Client</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Скачать файл — пример</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="container">
-        <a href="./download/" class="btn">Начать путешествие</a>
+  <main class="center">
+    <div class="card">
+      <h1 class="title">Готово к скачиванию</h1>
+      <p class="subtitle">Нажмите кнопку ниже, чтобы скачать файл</p>
+
+      <!-- Невидимая ссылка для скачивания файла из папки downloads -->
+      <a id="downloadAnchor" href="downloads/sample.txt" download style="display:none">download</a>
+
+      <!-- Видимая кнопка -->
+      <button id="downloadBtn" class="btn">Скачать файл</button>
+
+      <p class="hint">Файл: <strong>sample.txt</strong></p>
     </div>
+
+    <footer class="footer">Пример сайта — mlishevskiy-debug</footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
